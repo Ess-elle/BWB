@@ -69,15 +69,6 @@
     margin: 2px;
 }
 
-:root {
-    --inhale-duration: 0.1s; /* Default inhale duration */
-    --exhale-duration: 0.1s; /* Default exhale duration */
-  }
-
-#CatBody.running{
-    animation-play-state: running;
-}
-
 #inhale {
     appearance: textfield;
 }
@@ -88,11 +79,9 @@
 
 
 #CatBody {
-    animation-play-state: paused;
-    transform: translate(-50%, -50%);
-    animation: inhale var(--inhale-duration) alternate 0s infinite,
-               exhale var(--exhale-duration) alternate var(--inhale-duration) infinite;
+    transform: translate(0%, 0%);
     transform-origin: bottom;
+    animation-play-state: paused;
   }
 
 @keyframes inhale{
